@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+     <!-- font style -->
+      <!-- fontawsome -->
+       <link rel="stylesheet" href="../css/all.min.css">
+       <!-- bootstrap css -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <!-- main stylesheet -->
+       <link rel="stylesheet" href="../css/style.css">
+</head>
+
+    <body class="vh-100 body-main">
+        <div class="container  h-100 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow-lg" >
+                    <img src="../images/bg.jpg" class="card-img-top " alt="bg">
+                    <div class="card-body text-center">
+                      <h1 class=" text-capitalize mb-3">smart login system</h1>
+                     <form class="w-75 mx-auto">
+                      <div class="form-floating mb-3 position-relative">
+                        <input type="text" class="form-control rounded-pill" id="userName" placeholder="name@example.com">
+                        
+                       <label for="floatingInput"><i class="fa-solid fa-user position-absolute  mail-icon"></i>Enter your name</label>
+                     </div>
+                     <div class="alert alert-danger d-none mt-2"><p class="mb-0 w-75">"Your username must be at least 3 characters."</p></div>
+                         <div class="form-floating mb-3 position-relative">
+                             <input type="email" class="form-control rounded-pill" id="email" placeholder="name@example.com">
+                            
+                             <label for="floatingInput"> <i class="fa-solid fa-envelope position-absolute  mail-icon"></i>Enter your email</label>
+                            </div>
+                            <div class="alert alert-danger d-none mt-2">Please enter a valid email (e.g., example@domain.com).</div>
+                          <div class="form-floating position-relative">
+                              <input type="password" class="form-control rounded-pill" id="password" placeholder="Password">
+                              
+                            <label for="floatingPassword"><i class="fa-solid fa-lock mail-icon position-absolute"></i> Password</label>
+                          </div>
+                          <div class="alert alert-danger d-none mt-2 mx-auto"><p class="mb-0">At least 8 characters, 1 letter, and 1 number required</p></div>
+                           <div class="alert alert-danger d-none  mt-3 signUpAlert"></div>
+                       <button class="btn btn-signup text-uppercase  mt-3 mb-3">sign up</button>
+                       <p class="fw-bold">You have an account?<a href="../index.html" class="text-decoration-none  sign-up-link fw-bold" > Signin</a></p>
+                     </form>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    
+      
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>
