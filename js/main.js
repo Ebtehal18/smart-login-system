@@ -19,7 +19,6 @@ let usersContainer;
 //check if localstorage has a values or not 
 if (localStorage.getItem("users")===null){
     usersContainer=[]
-     location.href='../index.html'
 }else{
     usersContainer=JSON.parse(localStorage.getItem('users'))
 }
