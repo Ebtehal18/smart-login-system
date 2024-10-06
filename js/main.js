@@ -19,6 +19,7 @@ let usersContainer;
 //check if localstorage has a values or not 
 if (localStorage.getItem("users")===null){
     usersContainer=[]
+     location.href='../index.html'
 }else{
     usersContainer=JSON.parse(localStorage.getItem('users'))
 }
@@ -61,6 +62,7 @@ function addUser(){
     }
     usersContainer.push(user)
     localStorage.setItem("users",JSON.stringify(usersContainer))
+    location.href='../index.html'
     clearInputs()
     clearInputValidation()
    }
@@ -147,6 +149,7 @@ if(location.pathname.includes('welcome.html')){
 const loggrdObj=JSON.parse(localStorage.getItem("loggedInUser"))
 welcome.innerHTML=`Welcome <span class='fw-bold'>${loggrdObj.userName}</span>`
 btnLogOut.addEventListener("click",function(){
+     localStorage.removeItem('loggedInUser')
     location.href='../index.html' 
 })
 }
